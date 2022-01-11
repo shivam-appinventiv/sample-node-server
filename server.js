@@ -1,7 +1,9 @@
 const http = require('http');
 const express = require('express');
 const app = express();
-const {PORT = 8080} = process.env;
+const dotenv = require('dotenv');
+dotenv.config();
+const PORT = process.env.PORT || 8080 ;
 
 console.log('PORT',PORT);
 
